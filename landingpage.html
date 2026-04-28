@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>UNIVOmap — Navega el campus</title>
+  <title>UNIVOmap - Navega el campus</title>
   <meta name="description" content="El mapa interactivo oficial de la Universidad de Oriente (UNIVO). Encuentra aulas, laboratorios, cafeterías y más.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,391 +11,393 @@
   <link rel="stylesheet" href="landing.css">
 </head>
 <body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
-<!-- ══════════════════════════════════════
-     NAVBAR
-══════════════════════════════════════ -->
-<nav>
-  <div class="nav-logo"> <div><img src="logo.png" alt="UNIVOmap Logo" style="height: 50px; width: 50px; margin: auto 0; " ></div>UNIVO<span>map</span></div>
+  <header class="site-header">
+    <nav aria-label="Principal">
+      <a class="nav-logo" href="#inicio" aria-label="UNIVOmap, inicio">
+        <img src="logo.png" alt="Logo de UNIVOmap" class="nav-logo-img">
+        <span>UNIVO</span>map
+      </a>
 
-  <ul class="nav-links" id="navLinks">
-    <li><a href="#features">Características</a></li>
-    <li><a href="#how">Cómo funciona</a></li>
-    <li><a href="#spaces">Espacios</a></li>
-    <li><a href="#testimonios">Testimonios</a></li>
-  </ul>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#features">Características</a></li>
+        <li><a href="#how">Cómo funciona</a></li>
+        <li><a href="#spaces">Espacios</a></li>
+        <li><a href="#testimonios">Testimonios</a></li>
+      </ul>
 
-  <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
-    <span></span><span></span><span></span>
-  </button>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
 
-  <a href="#cta" class="nav-cta">Explorar ahora</a>
-</nav>
+      <a href="#cta" class="nav-cta">Explorar ahora</a>
+    </nav>
+  </header>
 
-<!-- ══════════════════════════════════════
-     HERO
-══════════════════════════════════════ -->
-<section class="hero-section">
-  <div class="hero">
+  <main id="contenido">
+    <section class="hero-section" id="inicio">
+      <div class="hero">
+        <div class="hero-text">
+          <div class="hero-badge">Universidad de Oriente - San Miguel, El Salvador</div>
+          <h1>Navega el campus<br>como un <em>experto</em></h1>
+          <p class="hero-desc">
+            UNIVOmap es el mapa interactivo oficial de la Universidad de Oriente.
+            Encuentra aulas, laboratorios, cafeterías, oficinas y más, de forma clara y rápida.
+          </p>
 
-    <!-- Texto -->
-    <div class="hero-text">
-      <div class="hero-badge">Universidad de Oriente — San Miguel, El Salvador</div>
-      <h1>Navega el campus<br>como un <em>experto</em></h1>
-      <p class="hero-desc">
-        UNIVOmap es el mapa interactivo oficial de la Universidad de Oriente.
-        Encuentra aulas, laboratorios, cafeterías, oficinas y más — en tiempo real.
-      </p>
-      <div class="hero-actions">
-        <a href="#" class="btn-main">
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-            <path d="M8 2a4 4 0 0 1 4 4c0 3-4 8-4 8S4 9 4 6a4 4 0 0 1 4-4z" fill="white"/>
-            <circle cx="8" cy="6" r="1.5" fill="#185FA5"/>
-          </svg>
-          Explorar el campus
-        </a>
-        <a href="#how" class="btn-outline">
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-            <circle cx="8" cy="8" r="6" stroke="#5F5E5A" stroke-width="1.4"/>
-            <path d="M6.5 6.5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5c0 .76-.57 1.37-1.31 1.47L8 8.97V10" stroke="#5F5E5A" stroke-width="1.3" stroke-linecap="round"/>
-            <circle cx="8" cy="12" r="0.7" fill="#5F5E5A"/>
-          </svg>
-          Cómo funciona
-        </a>
-      </div>
-    </div>
+          <div class="hero-actions">
+            <a href="#cta" class="btn-main">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M8 2a4 4 0 0 1 4 4c0 3-4 8-4 8S4 9 4 6a4 4 0 0 1 4-4z" fill="white"></path>
+                <circle cx="8" cy="6" r="1.5" fill="#185FA5"></circle>
+              </svg>
+              Explorar el campus
+            </a>
+            <a href="#how" class="btn-outline">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <circle cx="8" cy="8" r="6" stroke="#5F5E5A" stroke-width="1.4"></circle>
+                <path d="M6.5 6.5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5c0 .76-.57 1.37-1.31 1.47L8 8.97V10" stroke="#5F5E5A" stroke-width="1.3" stroke-linecap="round"></path>
+                <circle cx="8" cy="12" r="0.7" fill="#5F5E5A"></circle>
+              </svg>
+              Cómo funciona
+            </a>
+          </div>
 
-    <!-- Mockup del mapa -->
-    <div class="hero-map">
-      <div class="map-topbar">
-        <div class="map-search">
-          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-            <circle cx="6" cy="6" r="4" stroke="#888780" stroke-width="1.4"/>
-            <path d="M9 9l2.5 2.5" stroke="#888780" stroke-width="1.4" stroke-linecap="round"/>
-          </svg>
-          Buscar edificio, aula...
+          <div class="hero-highlights" aria-label="Beneficios destacados">
+            <span>Acceso rápido</span>
+            <span>Diseño móvil</span>
+            <span>Rutas internas</span>
+          </div>
         </div>
-        <div class="map-filter-btn">Filtrar</div>
-      </div>
 
-      <svg viewBox="0 0 520 340" xmlns="http://www.w3.org/2000/svg" style="width:100%;" role="img" aria-label="Vista previa del mapa del campus UNIVO">
-        <rect width="520" height="340" fill="#e9ede4"/>
-        <!-- Calles -->
-        <rect x="0" y="155" width="520" height="22" fill="#d6d4c8"/>
-        <rect x="170" y="0" width="22" height="340" fill="#d6d4c8"/>
-        <rect x="340" y="0" width="22" height="340" fill="#d6d4c8"/>
-        <!-- Zonas verdes -->
-        <ellipse cx="82" cy="90" rx="55" ry="42" fill="#c0d9a0" opacity="0.7"/>
-        <ellipse cx="430" cy="260" rx="52" ry="38" fill="#c0d9a0" opacity="0.7"/>
-        <ellipse cx="255" cy="230" rx="30" ry="22" fill="#b5d895" opacity="0.6"/>
-        <!-- Árboles -->
-        <circle cx="60"  cy="75"  r="9" fill="#7ab55c" opacity="0.7"/>
-        <circle cx="95"  cy="68"  r="7" fill="#7ab55c" opacity="0.6"/>
-        <circle cx="78"  cy="108" r="8" fill="#7ab55c" opacity="0.5"/>
-        <circle cx="415" cy="248" r="8" fill="#7ab55c" opacity="0.6"/>
-        <circle cx="445" cy="270" r="6" fill="#7ab55c" opacity="0.5"/>
-        <!-- Edificio: Ing. y Arq. -->
-        <rect x="22" y="185" width="88" height="60" rx="5" fill="#B5D4F4" stroke="#185FA5" stroke-width="1.2"/>
-        <text x="66" y="215" text-anchor="middle" font-size="10" fill="#0C447C" font-weight="600" font-family="DM Sans,sans-serif">Facultad de</text>
-        <text x="66" y="228" text-anchor="middle" font-size="10" fill="#185FA5" font-family="DM Sans,sans-serif">Ing. y Arquitectura</text>
-        <!-- Edificio: Rectoría -->
-        <rect x="204" y="22" width="96" height="68" rx="5" fill="#CECBF6" stroke="#534AB7" stroke-width="1.2"/>
-        <text x="252" y="54" text-anchor="middle" font-size="10" fill="#3C3489" font-weight="600" font-family="DM Sans,sans-serif">Rectoría</text>
-        <text x="252" y="67" text-anchor="middle" font-size="9"  fill="#534AB7" font-family="DM Sans,sans-serif">Administración</text>
-        <text x="252" y="79" text-anchor="middle" font-size="9"  fill="#534AB7" font-family="DM Sans,sans-serif">Central</text>
-        <!-- Edificio: Biblioteca -->
-        <rect x="364" y="22" width="88" height="60" rx="5" fill="#9FE1CB" stroke="#0F6E56" stroke-width="1.2"/>
-        <text x="408" y="52" text-anchor="middle" font-size="10" fill="#085041" font-weight="600" font-family="DM Sans,sans-serif">Biblioteca</text>
-        <text x="408" y="65" text-anchor="middle" font-size="9"  fill="#0F6E56" font-family="DM Sans,sans-serif">Central UNIVO</text>
-        <!-- Edificio: Cafetería -->
-        <rect x="204" y="186" width="84" height="52" rx="5" fill="#F5C4B3" stroke="#993C1D" stroke-width="1.2"/>
-        <text x="246" y="215" text-anchor="middle" font-size="10" fill="#712B13" font-weight="600" font-family="DM Sans,sans-serif">Cafetería</text>
-        <text x="246" y="228" text-anchor="middle" font-size="9"  fill="#993C1D" font-family="DM Sans,sans-serif">Campus Central</text>
-        <!-- Edificio: Laboratorios -->
-        <rect x="364" y="185" width="88" height="56" rx="5" fill="#FAC775" stroke="#854F0B" stroke-width="1.2"/>
-        <text x="408" y="213" text-anchor="middle" font-size="10" fill="#633806" font-weight="600" font-family="DM Sans,sans-serif">Laboratorios</text>
-        <text x="408" y="226" text-anchor="middle" font-size="9"  fill="#854F0B" font-family="DM Sans,sans-serif">de Ciencias</text>
-        <!-- Edificio: Ciencias Económicas -->
-        <rect x="22" y="22" width="88" height="56" rx="5" fill="#FAC775" stroke="#854F0B" stroke-width="1.2"/>
-        <text x="66" y="50" text-anchor="middle" font-size="10" fill="#633806" font-weight="600" font-family="DM Sans,sans-serif">Fac. Ciencias</text>
-        <text x="66" y="63" text-anchor="middle" font-size="9"  fill="#854F0B" font-family="DM Sans,sans-serif">Económicas</text>
-        <!-- Edificio: Auditorio -->
-        <rect x="364" y="262" width="88" height="52" rx="5" fill="#F4C0D1" stroke="#993556" stroke-width="1.2"/>
-        <text x="408" y="290" text-anchor="middle" font-size="10" fill="#72243E" font-weight="600" font-family="DM Sans,sans-serif">Auditorio</text>
-        <text x="408" y="303" text-anchor="middle" font-size="9"  fill="#993556" font-family="DM Sans,sans-serif">Principal</text>
-        <!-- Pin animado -->
-        <circle cx="252" cy="46" r="18" fill="#534AB7" opacity="0.15">
-          <animate attributeName="r"       values="14;22;14" dur="2s" repeatCount="indefinite"/>
-          <animate attributeName="opacity" values="0.15;0.05;0.15" dur="2s" repeatCount="indefinite"/>
-        </circle>
-        <circle cx="252" cy="46" r="7" fill="#534AB7"/>
-        <circle cx="252" cy="46" r="3" fill="white"/>
-        <!-- Tooltip -->
-        <rect x="186" y="6" width="132" height="26" rx="6" fill="white" stroke="#CECBF6" stroke-width="1"/>
-        <text x="252" y="23" text-anchor="middle" font-size="11" fill="#534AB7" font-weight="600" font-family="DM Sans,sans-serif">Rectoría UNIVO</text>
-        <!-- Brújula -->
-        <circle cx="490" cy="28" r="18" fill="white" stroke="#d6d4c8" stroke-width="1"/>
-        <text x="490" y="23" text-anchor="middle" font-size="9"  fill="#185FA5" font-weight="700" font-family="DM Sans,sans-serif">N</text>
-        <text x="490" y="40" text-anchor="middle" font-size="8"  fill="#888780" font-family="DM Sans,sans-serif">S</text>
-        <text x="481" y="32" text-anchor="middle" font-size="8"  fill="#888780" font-family="DM Sans,sans-serif">O</text>
-        <text x="499" y="32" text-anchor="middle" font-size="8"  fill="#888780" font-family="DM Sans,sans-serif">E</text>
-        <!-- Escala -->
-        <rect x="16" y="322" width="72" height="3" rx="1.5" fill="#888780"/>
-        <text x="16" y="336" font-size="8" fill="#5F5E5A" font-family="DM Sans,sans-serif">0 m</text>
-        <text x="72" y="336" font-size="8" fill="#5F5E5A" font-family="DM Sans,sans-serif">100 m</text>
-      </svg>
+        <div class="hero-map">
+          <div class="map-topbar">
+            <div class="map-search">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                <circle cx="6" cy="6" r="4" stroke="#888780" stroke-width="1.4"></circle>
+                <path d="M9 9l2.5 2.5" stroke="#888780" stroke-width="1.4" stroke-linecap="round"></path>
+              </svg>
+              Buscar edificio, aula...
+            </div>
+            <div class="map-filter-btn">Filtrar</div>
+          </div>
 
-      <div class="map-legend">
-        <span class="legend-item"><span class="legend-dot" style="background:#B5D4F4;"></span>Facultades</span>
-        <span class="legend-item"><span class="legend-dot" style="background:#9FE1CB;"></span>Biblioteca</span>
-        <span class="legend-item"><span class="legend-dot" style="background:#F5C4B3;"></span>Servicios</span>
-        <span class="legend-item"><span class="legend-dot" style="background:#FAC775;"></span>Laboratorios</span>
-      </div>
-    </div>
+          <svg viewBox="0 0 520 340" xmlns="http://www.w3.org/2000/svg" class="map-preview" role="img" aria-label="Vista previa del mapa del campus UNIVO">
+            <rect width="520" height="340" fill="#e9ede4"></rect>
+            <rect x="0" y="155" width="520" height="22" fill="#d6d4c8"></rect>
+            <rect x="170" y="0" width="22" height="340" fill="#d6d4c8"></rect>
+            <rect x="340" y="0" width="22" height="340" fill="#d6d4c8"></rect>
 
-  </div>
-</section>
+            <ellipse cx="82" cy="90" rx="55" ry="42" fill="#c0d9a0" opacity="0.7"></ellipse>
+            <ellipse cx="430" cy="260" rx="52" ry="38" fill="#c0d9a0" opacity="0.7"></ellipse>
+            <ellipse cx="255" cy="230" rx="30" ry="22" fill="#b5d895" opacity="0.6"></ellipse>
 
-<!-- ══════════════════════════════════════
-     ESTADÍSTICAS
-══════════════════════════════════════ -->
-<div class="stats-strip">
-  <div class="stats-inner">
-    <div><div class="stat-num">40+</div><div class="stat-label">Edificios mapeados</div></div>
-    <div><div class="stat-num">5</div><div class="stat-label">Facultades disponibles</div></div>
-    <div><div class="stat-num">200+</div><div class="stat-label">Aulas identificadas</div></div>
-    <div><div class="stat-num">100%</div><div class="stat-label">Gratuito para estudiantes</div></div>
-  </div>
-</div>
+            <circle cx="60" cy="75" r="9" fill="#7ab55c" opacity="0.7"></circle>
+            <circle cx="95" cy="68" r="7" fill="#7ab55c" opacity="0.6"></circle>
+            <circle cx="78" cy="108" r="8" fill="#7ab55c" opacity="0.5"></circle>
+            <circle cx="415" cy="248" r="8" fill="#7ab55c" opacity="0.6"></circle>
+            <circle cx="445" cy="270" r="6" fill="#7ab55c" opacity="0.5"></circle>
 
-<!-- ══════════════════════════════════════
-     CARACTERÍSTICAS
-══════════════════════════════════════ -->
-<section class="features-section" id="features">
-  <div class="section-label">Características</div>
-  <h2 class="section-title">Todo lo que necesitas<br>para moverte en el campus</h2>
-  <p class="section-desc">Diseñado pensando en estudiantes, docentes y visitantes de la UNIVO.</p>
+            <rect x="22" y="185" width="88" height="60" rx="5" fill="#B5D4F4" stroke="#185FA5" stroke-width="1.2"></rect>
+            <text x="66" y="215" text-anchor="middle" font-size="10" fill="#0C447C" font-weight="600" font-family="DM Sans,sans-serif">Facultad de</text>
+            <text x="66" y="228" text-anchor="middle" font-size="10" fill="#185FA5" font-family="DM Sans,sans-serif">Ing. y Arquitectura</text>
 
-  <div class="features-grid">
-    <!-- Card acento -->
-    <div class="feat-card accent">
-      <div class="feat-icon" style="background:rgba(255,255,255,0.15);">
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
-          <circle cx="10" cy="9" r="4" stroke="white" stroke-width="1.6"/>
-          <path d="M10 2v3M10 14v3M3 9h3M14 9h3" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
-        </svg>
-      </div>
-      <div class="feat-title">Navegación en tiempo real</div>
-      <div class="feat-desc">Ubícate dentro del campus al instante con GPS de alta precisión y mapas offline.</div>
-    </div>
-    <!-- Directorio -->
-    <div class="feat-card">
-      <div class="feat-icon" style="background:var(--green-50);">
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
-          <rect x="3" y="3" width="14" height="14" rx="2" stroke="#0F6E56" stroke-width="1.6"/>
-          <path d="M7 10h6M7 7h5M7 13h4" stroke="#0F6E56" stroke-width="1.5" stroke-linecap="round"/>
-        </svg>
-      </div>
-      <div class="feat-title">Directorio completo</div>
-      <div class="feat-desc">Todas las facultades, laboratorios, cafeterías y oficinas administrativas en un solo lugar.</div>
-    </div>
-    <!-- Rutas -->
-    <div class="feat-card">
-      <div class="feat-icon" style="background:var(--purple-50);">
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
-          <path d="M4 10h12M10 4l6 6-6 6" stroke="#534AB7" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </div>
-      <div class="feat-title">Rutas internas</div>
-      <div class="feat-desc">Calcula la ruta más corta entre dos puntos del campus con indicaciones paso a paso.</div>
-    </div>
-    <!-- Horarios -->
-    <div class="feat-card">
-      <div class="feat-icon" style="background:var(--amber-50);">
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
-          <circle cx="10" cy="10" r="7" stroke="#854F0B" stroke-width="1.6"/>
-          <path d="M10 6v4l2.5 2.5" stroke="#854F0B" stroke-width="1.5" stroke-linecap="round"/>
-        </svg>
-      </div>
-      <div class="feat-title">Horarios y eventos</div>
-      <div class="feat-desc">Integración con el calendario académico. Ve eventos, exámenes y actividades en el mapa.</div>
-    </div>
-    <!-- Móvil -->
-    <div class="feat-card">
-      <div class="feat-icon" style="background:var(--coral-50);">
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
-          <rect x="5" y="3" width="10" height="14" rx="2" stroke="#993C1D" stroke-width="1.6"/>
-          <path d="M8 7h4M8 10h3" stroke="#993C1D" stroke-width="1.4" stroke-linecap="round"/>
-          <circle cx="10" cy="14" r="0.8" fill="#993C1D"/>
-        </svg>
-      </div>
-      <div class="feat-title">Disponible en móvil</div>
-      <div class="feat-desc">App optimizada para iOS y Android. Funciona sin conexión dentro del campus.</div>
-    </div>
-    <!-- QR -->
-    <div class="feat-card">
-      <div class="feat-icon" style="background:var(--blue-50);">
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
-          <path d="M10 3a7 7 0 1 1 0 14A7 7 0 0 1 10 3z" stroke="#185FA5" stroke-width="1.6"/>
-          <path d="M10 8v2l1.5 1.5" stroke="#185FA5" stroke-width="1.5" stroke-linecap="round"/>
-          <path d="M7 3.5C5.5 5 4.5 7 4.5 9.5" stroke="#185FA5" stroke-width="1.2" stroke-linecap="round"/>
-        </svg>
-      </div>
-      <div class="feat-title">Escaneo QR</div>
-      <div class="feat-desc">Cada edificio tiene un código QR que abre automáticamente su ubicación en el mapa.</div>
-    </div>
-  </div>
-</section>
+            <rect x="204" y="22" width="96" height="68" rx="5" fill="#CECBF6" stroke="#534AB7" stroke-width="1.2"></rect>
+            <text x="252" y="54" text-anchor="middle" font-size="10" fill="#3C3489" font-weight="600" font-family="DM Sans,sans-serif">Rectoría</text>
+            <text x="252" y="67" text-anchor="middle" font-size="9" fill="#534AB7" font-family="DM Sans,sans-serif">Administración</text>
+            <text x="252" y="79" text-anchor="middle" font-size="9" fill="#534AB7" font-family="DM Sans,sans-serif">Central</text>
 
-<!-- ══════════════════════════════════════
-     CÓMO FUNCIONA
-══════════════════════════════════════ -->
-<section class="how-section" id="how">
-  <div class="how-inner">
-    <div class="section-label">Cómo funciona</div>
-    <h2 class="section-title">Simple desde el primer uso</h2>
-    <p class="section-desc">Sin registro obligatorio. Abre la app y empieza a explorar.</p>
+            <rect x="364" y="22" width="88" height="60" rx="5" fill="#9FE1CB" stroke="#0F6E56" stroke-width="1.2"></rect>
+            <text x="408" y="52" text-anchor="middle" font-size="10" fill="#085041" font-weight="600" font-family="DM Sans,sans-serif">Biblioteca</text>
+            <text x="408" y="65" text-anchor="middle" font-size="9" fill="#0F6E56" font-family="DM Sans,sans-serif">Central UNIVO</text>
 
-    <div class="steps">
-      <div class="step">
-        <div class="step-num">1</div>
-        <div class="step-title">Abre UNIVOmap</div>
-        <div class="step-desc">Accede desde el navegador o descarga la app. No necesitas cuenta para explorar.</div>
+            <rect x="204" y="186" width="84" height="52" rx="5" fill="#F5C4B3" stroke="#993C1D" stroke-width="1.2"></rect>
+            <text x="246" y="215" text-anchor="middle" font-size="10" fill="#712B13" font-weight="600" font-family="DM Sans,sans-serif">Cafetería</text>
+            <text x="246" y="228" text-anchor="middle" font-size="9" fill="#993C1D" font-family="DM Sans,sans-serif">Campus Central</text>
+
+            <rect x="364" y="185" width="88" height="56" rx="5" fill="#FAC775" stroke="#854F0B" stroke-width="1.2"></rect>
+            <text x="408" y="213" text-anchor="middle" font-size="10" fill="#633806" font-weight="600" font-family="DM Sans,sans-serif">Laboratorios</text>
+            <text x="408" y="226" text-anchor="middle" font-size="9" fill="#854F0B" font-family="DM Sans,sans-serif">de Ciencias</text>
+
+            <rect x="22" y="22" width="88" height="56" rx="5" fill="#FAC775" stroke="#854F0B" stroke-width="1.2"></rect>
+            <text x="66" y="50" text-anchor="middle" font-size="10" fill="#633806" font-weight="600" font-family="DM Sans,sans-serif">Fac. Ciencias</text>
+            <text x="66" y="63" text-anchor="middle" font-size="9" fill="#854F0B" font-family="DM Sans,sans-serif">Económicas</text>
+
+            <rect x="364" y="262" width="88" height="52" rx="5" fill="#F4C0D1" stroke="#993556" stroke-width="1.2"></rect>
+            <text x="408" y="290" text-anchor="middle" font-size="10" fill="#72243E" font-weight="600" font-family="DM Sans,sans-serif">Auditorio</text>
+            <text x="408" y="303" text-anchor="middle" font-size="9" fill="#993556" font-family="DM Sans,sans-serif">Principal</text>
+
+            <circle cx="252" cy="46" r="18" fill="#534AB7" opacity="0.15">
+              <animate attributeName="r" values="14;22;14" dur="2s" repeatCount="indefinite"></animate>
+              <animate attributeName="opacity" values="0.15;0.05;0.15" dur="2s" repeatCount="indefinite"></animate>
+            </circle>
+            <circle cx="252" cy="46" r="7" fill="#534AB7"></circle>
+            <circle cx="252" cy="46" r="3" fill="white"></circle>
+
+            <rect x="186" y="6" width="132" height="26" rx="6" fill="white" stroke="#CECBF6" stroke-width="1"></rect>
+            <text x="252" y="23" text-anchor="middle" font-size="11" fill="#534AB7" font-weight="600" font-family="DM Sans,sans-serif">Rectoría UNIVO</text>
+
+            <circle cx="490" cy="28" r="18" fill="white" stroke="#d6d4c8" stroke-width="1"></circle>
+            <text x="490" y="23" text-anchor="middle" font-size="9" fill="#185FA5" font-weight="700" font-family="DM Sans,sans-serif">N</text>
+            <text x="490" y="40" text-anchor="middle" font-size="8" fill="#888780" font-family="DM Sans,sans-serif">S</text>
+            <text x="481" y="32" text-anchor="middle" font-size="8" fill="#888780" font-family="DM Sans,sans-serif">O</text>
+            <text x="499" y="32" text-anchor="middle" font-size="8" fill="#888780" font-family="DM Sans,sans-serif">E</text>
+
+            <rect x="16" y="322" width="72" height="3" rx="1.5" fill="#888780"></rect>
+            <text x="16" y="336" font-size="8" fill="#5F5E5A" font-family="DM Sans,sans-serif">0 m</text>
+            <text x="72" y="336" font-size="8" fill="#5F5E5A" font-family="DM Sans,sans-serif">100 m</text>
+          </svg>
+
+          <div class="map-legend">
+            <span class="legend-item"><span class="legend-dot" style="background:#B5D4F4;"></span>Facultades</span>
+            <span class="legend-item"><span class="legend-dot" style="background:#9FE1CB;"></span>Biblioteca</span>
+            <span class="legend-item"><span class="legend-dot" style="background:#F5C4B3;"></span>Servicios</span>
+            <span class="legend-item"><span class="legend-dot" style="background:#FAC775;"></span>Laboratorios</span>
+          </div>
+        </div>
       </div>
-      <div class="step">
-        <div class="step-num">2</div>
-        <div class="step-title">Busca tu destino</div>
-        <div class="step-desc">Escribe el nombre del edificio, aula o servicio que necesitas encontrar.</div>
-      </div>
-      <div class="step">
-        <div class="step-num">3</div>
-        <div class="step-title">Obtén la ruta</div>
-        <div class="step-desc">El mapa calcula el camino más corto desde donde estás hasta tu destino.</div>
-      </div>
-      <div class="step">
-        <div class="step-num">4</div>
-        <div class="step-title">¡Llegaste!</div>
-        <div class="step-desc">Navega con confianza por toda la universidad. Sin perderte en el primer día.</div>
+    </section>
+
+    <div class="stats-strip">
+      <div class="stats-inner">
+        <div>
+          <div class="stat-num">40+</div>
+          <div class="stat-label">Edificios mapeados</div>
+        </div>
+        <div>
+          <div class="stat-num">5</div>
+          <div class="stat-label">Facultades disponibles</div>
+        </div>
+        <div>
+          <div class="stat-num">200+</div>
+          <div class="stat-label">Aulas identificadas</div>
+        </div>
+        <div>
+          <div class="stat-num">100%</div>
+          <div class="stat-label">Gratuito para estudiantes</div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
 
-<!-- ══════════════════════════════════════
-     ESPACIOS MAPEADOS
-══════════════════════════════════════ -->
-<section class="spaces-section" id="spaces">
-  <div class="section-label">Espacios mapeados</div>
-  <h2 class="section-title">Conoce cada rincón<br>del campus UNIVO</h2>
-  <p class="section-desc">Desde aulas hasta parqueos, todo está marcado con información detallada.</p>
+    <section class="features-section" id="features">
+      <div class="section-label">Características</div>
+      <h2 class="section-title">Todo lo que necesitas<br>para moverte en el campus</h2>
+      <p class="section-desc">Diseñado pensando en estudiantes, docentes y visitantes de la UNIVO.</p>
 
-  <div class="spaces-grid">
-    <div class="space-card" style="background:var(--blue-50);border-color:var(--blue-100);">
-      <div class="space-name" style="color:var(--blue-800);">Facultad de Ing. y Arquitectura</div>
-      <div class="space-type" style="color:var(--blue-600);">Facultad</div>
-      <div class="space-tag" style="background:var(--blue-100);color:var(--blue-800);">Aulas disponibles</div>
-    </div>
-    <div class="space-card" style="background:var(--purple-50);border-color:var(--purple-100);">
-      <div class="space-name" style="color:#3C3489;">Rectoría y Administración</div>
-      <div class="space-type" style="color:var(--purple-600);">Administración</div>
-      <div class="space-tag" style="background:var(--purple-100);color:#3C3489;">Gestión académica</div>
-    </div>
-    <div class="space-card" style="background:var(--green-50);border-color:var(--green-100);">
-      <div class="space-name" style="color:#085041;">Biblioteca Central</div>
-      <div class="space-type" style="color:var(--green-600);">Biblioteca</div>
-      <div class="space-tag" style="background:var(--green-100);color:#085041;">Horario disponible</div>
-    </div>
-    <div class="space-card" style="background:var(--amber-50);border-color:var(--amber-100);">
-      <div class="space-name" style="color:#633806;">Laboratorios de Ciencias</div>
-      <div class="space-type" style="color:var(--amber-600);">Laboratorio</div>
-      <div class="space-tag" style="background:var(--amber-100);color:#633806;">Equipos especializados</div>
-    </div>
-    <div class="space-card" style="background:var(--coral-50);border-color:var(--coral-100);">
-      <div class="space-name" style="color:#712B13;">Cafetería Campus Central</div>
-      <div class="space-type" style="color:var(--coral-600);">Servicio</div>
-      <div class="space-tag" style="background:var(--coral-100);color:#712B13;">Lunes–Viernes 7am–6pm</div>
-    </div>
-    <div class="space-card" style="background:#FBEAF0;border-color:#F4C0D1;">
-      <div class="space-name" style="color:#72243E;">Auditorio Principal</div>
-      <div class="space-type" style="color:#993556;">Auditorio</div>
-      <div class="space-tag" style="background:#F4C0D1;color:#72243E;">Capacidad 300 personas</div>
-    </div>
-  </div>
-</section>
+      <div class="features-grid">
+        <div class="feat-card accent">
+          <div class="feat-icon" style="background:rgba(255,255,255,0.15);">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+              <circle cx="10" cy="9" r="4" stroke="white" stroke-width="1.6"></circle>
+              <path d="M10 2v3M10 14v3M3 9h3M14 9h3" stroke="white" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+          </div>
+          <div class="feat-title">Navegación en tiempo real</div>
+          <div class="feat-desc">Ubícate dentro del campus al instante con GPS de alta precisión y mapas offline.</div>
+        </div>
 
-<!-- ══════════════════════════════════════
-     TESTIMONIOS
-══════════════════════════════════════ -->
-<section class="testimonials" id="testimonios">
-  <div class="testimonials-inner">
-    <div class="section-label">Testimonios</div>
-    <h2 class="section-title">Lo que dice la comunidad<br>universitaria</h2>
+        <div class="feat-card">
+          <div class="feat-icon" style="background:var(--green-50);">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+              <rect x="3" y="3" width="14" height="14" rx="2" stroke="#0F6E56" stroke-width="1.6"></rect>
+              <path d="M7 10h6M7 7h5M7 13h4" stroke="#0F6E56" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+          </div>
+          <div class="feat-title">Directorio completo</div>
+          <div class="feat-desc">Todas las facultades, laboratorios, cafeterías y oficinas administrativas en un solo lugar.</div>
+        </div>
 
-    <div class="testi-grid">
-      <div class="testi-card">
-        <div class="testi-text">"El primer día de clases ya no fue estresante. Encontré mi salón en segundos y llegué sin ningún problema."</div>
-        <div class="testi-author">María Fernanda López</div>
-        <div class="testi-role">Estudiante de primer año — Ing. Civil</div>
+        <div class="feat-card">
+          <div class="feat-icon" style="background:var(--purple-50);">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+              <path d="M4 10h12M10 4l6 6-6 6" stroke="#534AB7" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </div>
+          <div class="feat-title">Rutas internas</div>
+          <div class="feat-desc">Calcula la ruta más corta entre dos puntos del campus con indicaciones paso a paso.</div>
+        </div>
+
+        <div class="feat-card">
+          <div class="feat-icon" style="background:var(--amber-50);">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+              <circle cx="10" cy="10" r="7" stroke="#854F0B" stroke-width="1.6"></circle>
+              <path d="M10 6v4l2.5 2.5" stroke="#854F0B" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+          </div>
+          <div class="feat-title">Horarios y eventos</div>
+          <div class="feat-desc">Integración con el calendario académico. Ve eventos, exámenes y actividades en el mapa.</div>
+        </div>
+
+        <div class="feat-card">
+          <div class="feat-icon" style="background:var(--coral-50);">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+              <rect x="5" y="3" width="10" height="14" rx="2" stroke="#993C1D" stroke-width="1.6"></rect>
+              <path d="M8 7h4M8 10h3" stroke="#993C1D" stroke-width="1.4" stroke-linecap="round"></path>
+              <circle cx="10" cy="14" r="0.8" fill="#993C1D"></circle>
+            </svg>
+          </div>
+          <div class="feat-title">Disponible en móvil</div>
+          <div class="feat-desc">App optimizada para iOS y Android. Funciona sin conexión dentro del campus.</div>
+        </div>
+
+        <div class="feat-card">
+          <div class="feat-icon" style="background:var(--blue-50);">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+              <path d="M10 3a7 7 0 1 1 0 14A7 7 0 0 1 10 3z" stroke="#185FA5" stroke-width="1.6"></path>
+              <path d="M10 8v2l1.5 1.5" stroke="#185FA5" stroke-width="1.5" stroke-linecap="round"></path>
+              <path d="M7 3.5C5.5 5 4.5 7 4.5 9.5" stroke="#185FA5" stroke-width="1.2" stroke-linecap="round"></path>
+            </svg>
+          </div>
+          <div class="feat-title">Escaneo QR</div>
+          <div class="feat-desc">Cada edificio tiene un código QR que abre automáticamente su ubicación en el mapa.</div>
+        </div>
       </div>
-      <div class="testi-card">
-        <div class="testi-text">"Excelente herramienta. Mis estudiantes ya no llegan tarde porque no encuentran el laboratorio. Todo más ordenado."</div>
-        <div class="testi-author">Lic. Roberto Henríquez</div>
-        <div class="testi-role">Docente — Facultad de Ciencias</div>
+    </section>
+
+    <section class="how-section" id="how">
+      <div class="how-inner">
+        <div class="section-label">Cómo funciona</div>
+        <h2 class="section-title">Simple desde el primer uso</h2>
+        <p class="section-desc">Sin registro obligatorio. Abre la app y empieza a explorar.</p>
+
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">1</div>
+            <div class="step-title">Abre UNIVOmap</div>
+            <div class="step-desc">Accede desde el navegador o descarga la app. No necesitas cuenta para explorar.</div>
+          </div>
+          <div class="step">
+            <div class="step-num">2</div>
+            <div class="step-title">Busca tu destino</div>
+            <div class="step-desc">Escribe el nombre del edificio, aula o servicio que necesitas encontrar.</div>
+          </div>
+          <div class="step">
+            <div class="step-num">3</div>
+            <div class="step-title">Obtén la ruta</div>
+            <div class="step-desc">El mapa calcula el camino más corto desde donde estás hasta tu destino.</div>
+          </div>
+          <div class="step">
+            <div class="step-num">4</div>
+            <div class="step-title">¡Llegaste!</div>
+            <div class="step-desc">Navega con confianza por toda la universidad. Sin perderte en el primer día.</div>
+          </div>
+        </div>
       </div>
-      <div class="testi-card">
-        <div class="testi-text">"Como visitante de otra facultad, es increíble poder navegar todo el campus sin tener que preguntarle a alguien cada vez."</div>
-        <div class="testi-author">Carlos Andrade</div>
-        <div class="testi-role">Estudiante — Fac. Económicas</div>
+    </section>
+
+    <section class="spaces-section" id="spaces">
+      <div class="section-label">Espacios mapeados</div>
+      <h2 class="section-title">Conoce cada rincón<br>del campus UNIVO</h2>
+      <p class="section-desc">Desde aulas hasta parqueos, todo está marcado con información detallada.</p>
+
+      <div class="spaces-grid">
+        <div class="space-card" style="background:var(--blue-50);border-color:var(--blue-100);">
+          <div class="space-name" style="color:var(--blue-800);">Facultad de Ing. y Arquitectura</div>
+          <div class="space-type" style="color:var(--blue-600);">Facultad</div>
+          <div class="space-tag" style="background:var(--blue-100);color:var(--blue-800);">Aulas disponibles</div>
+        </div>
+        <div class="space-card" style="background:var(--purple-50);border-color:var(--purple-100);">
+          <div class="space-name" style="color:#3C3489;">Rectoría y Administración</div>
+          <div class="space-type" style="color:var(--purple-600);">Administración</div>
+          <div class="space-tag" style="background:var(--purple-100);color:#3C3489;">Gestión académica</div>
+        </div>
+        <div class="space-card" style="background:var(--green-50);border-color:var(--green-100);">
+          <div class="space-name" style="color:#085041;">Biblioteca Central</div>
+          <div class="space-type" style="color:var(--green-600);">Biblioteca</div>
+          <div class="space-tag" style="background:var(--green-100);color:#085041;">Horario disponible</div>
+        </div>
+        <div class="space-card" style="background:var(--amber-50);border-color:var(--amber-100);">
+          <div class="space-name" style="color:#633806;">Laboratorios de Ciencias</div>
+          <div class="space-type" style="color:var(--amber-600);">Laboratorio</div>
+          <div class="space-tag" style="background:var(--amber-100);color:#633806;">Equipos especializados</div>
+        </div>
+        <div class="space-card" style="background:var(--coral-50);border-color:var(--coral-100);">
+          <div class="space-name" style="color:#712B13;">Cafetería Campus Central</div>
+          <div class="space-type" style="color:var(--coral-600);">Servicio</div>
+          <div class="space-tag" style="background:var(--coral-100);color:#712B13;">Lunes-Viernes 7am-6pm</div>
+        </div>
+        <div class="space-card" style="background:#FBEAF0;border-color:#F4C0D1;">
+          <div class="space-name" style="color:#72243E;">Auditorio Principal</div>
+          <div class="space-type" style="color:#993556;">Auditorio</div>
+          <div class="space-tag" style="background:#F4C0D1;color:#72243E;">Capacidad 300 personas</div>
+        </div>
       </div>
+    </section>
+
+    <section class="testimonials" id="testimonios">
+      <div class="testimonials-inner">
+        <div class="section-label">Testimonios</div>
+        <h2 class="section-title">Lo que dice la comunidad<br>universitaria</h2>
+
+        <div class="testi-grid">
+          <div class="testi-card">
+            <div class="testi-text">"El primer día de clases ya no fue estresante. Encontré mi salón en segundos y llegué sin ningún problema."</div>
+            <div class="testi-author">María Fernanda López</div>
+            <div class="testi-role">Estudiante de primer año - Ing. Civil</div>
+          </div>
+          <div class="testi-card">
+            <div class="testi-text">"Excelente herramienta. Mis estudiantes ya no llegan tarde porque no encuentran el laboratorio. Todo más ordenado."</div>
+            <div class="testi-author">Lic. Roberto Henríquez</div>
+            <div class="testi-role">Docente - Facultad de Ciencias</div>
+          </div>
+          <div class="testi-card">
+            <div class="testi-text">"Como visitante de otra facultad, es increíble poder navegar todo el campus sin tener que preguntarle a alguien cada vez."</div>
+            <div class="testi-author">Carlos Andrade</div>
+            <div class="testi-role">Estudiante - Fac. Económicas</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section" id="cta">
+      <div class="section-label" style="text-align:center;">Empieza ahora</div>
+      <h2 class="section-title" style="text-align:center;">¿Listo para explorar<br>el campus UNIVO?</h2>
+      <p>Accede al mapa interactivo desde cualquier dispositivo, sin necesidad de descargar nada. Gratis para toda la comunidad universitaria.</p>
+      <div class="cta-btns">
+        <!-- Reemplaza este enlace por la URL real de tu mapa -->
+        <a href="__PEGAR_LINK_DEL_MAPA_AQUI__" class="btn-main">Abrir mapa</a>
+        <a href="#features" class="btn-outline">Ver todas las funciones</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="logo" href="#inicio">UNIVO<span>map</span></a>
+    <div class="footer-links">
+      <a href="#inicio">Inicio</a>
+      <a href="#features">Características</a>
+      <a href="#how">Cómo funciona</a>
+      <a href="#spaces">Espacios</a>
+      <a href="#cta">Contacto</a>
     </div>
-  </div>
-</section>
+    <p>© 2025 UNIVOmap - Universidad de Oriente, San Miguel, El Salvador</p>
+    <p style="margin-top:6px;">Proyecto estudiantil de mapeo universitario</p>
+  </footer>
 
-<!-- ══════════════════════════════════════
-     CTA FINAL
-══════════════════════════════════════ -->
-<section class="cta-section" id="cta">
-  <div class="section-label" style="text-align:center;">Empieza ahora</div>
-  <h2 class="section-title" style="text-align:center;">¿Listo para explorar<br>el campus UNIVO?</h2>
-  <p>Accede al mapa interactivo desde cualquier dispositivo, sin necesidad de descargar nada. Gratis para toda la comunidad universitaria.</p>
-  <div class="cta-btns">
-    <a href="#" class="btn-main">Abrir el mapa</a>
-    <a href="#features" class="btn-outline">Ver todas las funciones</a>
-  </div>
-</section>
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
 
-<!-- ══════════════════════════════════════
-     FOOTER
-══════════════════════════════════════ -->
-<footer>
-  <div class="logo">UNIVO<span>map</span></div>
-  <div class="footer-links">
-    <a href="#">Inicio</a>
-    <a href="#features">Características</a>
-    <a href="#how">Cómo funciona</a>
-    <a href="#spaces">Espacios</a>
-    <a href="#">Contacto</a>
-  </div>
-  <p>© 2025 UNIVOmap — Universidad de Oriente, San Miguel, El Salvador</p>
-  <p style="margin-top:6px;">Proyecto estudiantil de mapeo universitario</p>
-</footer>
+    function setMenu(open) {
+      navLinks.classList.toggle('open', open);
+      toggle.setAttribute('aria-expanded', String(open));
+    }
 
-<!-- ══════════════════════════════════════
-     JS — Menú hamburguesa móvil
-══════════════════════════════════════ -->
-<script>
-  const toggle   = document.getElementById('navToggle');
-  const navLinks = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => {
+      setMenu(!navLinks.classList.contains('open'));
+    });
 
-  toggle.addEventListener('click', () => {
-    navLinks.classList.toggle('open');
-  });
+    navLinks.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => setMenu(false));
+    });
 
-  // Cerrar menú al hacer clic en un enlace
-  navLinks.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => navLinks.classList.remove('open'));
-  });
-</script>
-
+    document.addEventListener('click', (event) => {
+      const clickedInsideNav = event.target.closest('nav');
+      if (!clickedInsideNav) {
+        setMenu(false);
+      }
+    });
+  </script>
 </body>
-</html
+</html>
