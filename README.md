@@ -97,11 +97,11 @@ Landinpage-UnivoMap/
 
 ---
 ##🤵Integrantes 
-Lenin ALejandro Hernández Coreas
-Bremond Antony Hernández Coreas
-Kevin Bladimir Guardado Ortez 
-Mauricio Antonio Bustillo Rosales
-Henry Fernando Portillo Luna 
+-Lenin Alejandro Hernández Coreas
+-Bremond Antony Hernández Coreas
+-Kevin Bladimir Guardado Ortez 
+-Mauricio Antonio Bustillo Rosales
+-Henry Fernando Portillo Luna 
 
 ## 📄 Licencia
 <div align="center">
