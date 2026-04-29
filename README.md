@@ -1,170 +1,109 @@
-# 🗺️ UNIVOmap — Navega el campus como un experto
+# 🗺️ UNIVOmap — Landing Page
 
-<div align="center">
-
-![UNIVOmap Banner](https://img.shields.io/badge/UNIVOmap-Universidad%20de%20Oriente-185FA5?style=for-the-badge&logo=googlemaps&logoColor=white)
-
-**El mapa interactivo oficial de la Universidad de Oriente (UNIVO)**  
-*San Miguel, El Salvador*
-
-[![HTML](https://img.shields.io/badge/HTML5-41.5%25-E34F26?style=flat-square&logo=html5&logoColor=white)](https://github.com/leninalejan/Landinpage-UnivoMap)
-[![CSS](https://img.shields.io/badge/CSS3-58.5%25-1572B6?style=flat-square&logo=css3&logoColor=white)](https://github.com/leninalejan/Landinpage-UnivoMap)
-[![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
-[![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)]()
-
-</div>
+> Landing page oficial del mapa interactivo de la **Universidad de Oriente (UNIVO)**, San Miguel, El Salvador.
 
 ---
 
-## 📋 Descripción
+## 📌 Descripción
 
-**UNIVOmap** es una landing page y herramienta que servira para la introduccion a un proyecto de mapeo universitario diseñada para estudiantes, docentes y visitantes de la **Universidad de Oriente (UNIVO)**. Permite navegar el campus de forma clara, rápida e intuitiva, mostrando la ubicación de aulas, laboratorios, facultades, cafeterías y más.
-
-El proyecto nace de la necesidad de orientar a quienes ingresan por primera vez al campus, eliminando la confusión y el tiempo perdido buscando espacios académicos.
+**UNIVOmap** es un proyecto estudiantil que ofrece un mapa interactivo del campus universitario de la UNIVO. Esta landing page presenta las características, espacios mapeados y cómo funciona la herramienta, con el objetivo de guiar a estudiantes, docentes y visitantes dentro del campus.
 
 ---
 
-## ✨ Características principales
+## 🖥️ Vista previa
 
-| Característica | Descripción |
-|---|---|
-| 🧭 **Navegación GPS** | Ubícate dentro del campus al instante con mapas detallados de alta precisión |
-| 📋 **Directorio completo** | Todas las facultades, laboratorios, cafeterías y oficinas en un solo lugar |
-| 🔀 **Rutas internas** | Calcula el camino más corto entre dos puntos del campus paso a paso |
-| 📅 **Horarios y eventos** | Integración con el calendario académico de la universidad |
-| 📱 **Diseño móvil** | Completamente optimizado para iOS y Android |
-| 📷 **Escaneo QR** | Cada edificio tiene un código QR que abre su ubicación automáticamente |
-| 🌙 **Modo oscuro** | Soporte completo de tema claro/oscuro con persistencia en `localStorage` |
+![UNIVOmap preview](logo.png)
+
+---
+
+## 📁 Estructura del proyecto
+
+```
+Landinpage-UnivoMap/
+├── index.html          # Página principal (versión con JS separado)
+├── landingpage.html    # Versión alternativa / de desarrollo
+├── landing.css         # Estilos globales y temas claro/oscuro
+├── logo.png            # Logo oficial de UNIVOmap
+└── README.md
+```
+
+---
+
+## ✨ Características
+
+- 🔍 **Búsqueda de edificios** — encuentra aulas, laboratorios y oficinas rápidamente
+- 🗺️ **Mapa interactivo** — vista previa SVG del campus con leyenda de colores
+- 🌙 **Modo oscuro / claro** — toggle con persistencia en `localStorage`
+- 📱 **Diseño responsive** — optimizado para móvil y escritorio
+- ♿ **Accesibilidad** — uso de atributos ARIA y navegación por teclado
+- 📍 **Rutas internas** — indicaciones paso a paso dentro del campus
+- 📆 **Horarios y eventos** — integración con el calendario académico
+- 📷 **Escaneo QR** — cada edificio tiene su código QR
 
 ---
 
 ## 🏛️ Espacios mapeados
 
-- 🔵 **Facultad de Ingeniería y Arquitectura** — Aulas disponibles
-- 🟣 **Rectoría y Administración Central** — Gestión académica
-- 🟢 **Biblioteca Central UNIVO** — Horarios disponibles
-- 🟡 **Laboratorios de Ciencias** — Equipos especializados
-- 🔴 **Cafetería Campus Central** — Lun–Vie 7am–6pm
-- 🩷 **Auditorio Principal** — Capacidad para 300 personas
-
-> **40+ edificios mapeados · 5 facultades · 200+ aulas identificadas · 100% gratuito**
-
----
-
-## 🚀 Cómo funciona
-
-```
-1. Abre UNIVOmap  →  Accede desde el navegador o descarga la app. Sin cuenta necesaria.
-2. Busca tu destino  →  Escribe el nombre del edificio, aula o servicio.
-3. Obtén la ruta  →  El mapa calcula el camino más corto desde tu posición.
-4. ¡Llegaste!  →  Navega con confianza por toda la universidad.
-```
+| Espacio | Tipo |
+|---|---|
+| Facultad de Ing. y Arquitectura | Facultad |
+| Rectoría y Administración Central | Administración |
+| Biblioteca Central UNIVO | Biblioteca |
+| Laboratorios de Ciencias | Laboratorio |
+| Cafetería Campus Central | Servicio |
+| Auditorio Principal | Auditorio |
+| Facultad de Ciencias Económicas | Facultad |
 
 ---
 
-## 🗂️ Estructura del proyecto
+## 🚀 Cómo usar
 
-```
-Landinpage-UnivoMap/
-│
-├── index.html          # Página de entrada principal
-├── landingpage.html    # Landing page completa con todas las secciones
-├── landing.css         # Estilos globales, variables CSS y modo oscuro
-└── logo.png            # Logotipo oficial de UNIVOmap
-```
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/leninalejan/Landinpage-UnivoMap.git
+   ```
 
----
+2. Abre `index.html` directamente en tu navegador — no requiere servidor ni dependencias.
 
-## 🛠️ Tecnologías utilizadas
-
-- **HTML5** — Estructura semántica accesible (uso de `aria-label`, `aria-expanded`, `skip links`)
-- **CSS3** — Variables CSS, diseño responsive, animaciones y soporte de tema oscuro/claro
-- **JavaScript vanilla** — Menú móvil, toggle de tema y persistencia con `localStorage`
-- **Google Fonts** — Tipografías `DM Serif Display` y `DM Sans`
-- **SVG inline** — Mapa del campus renderizado en SVG con animaciones CSS
+3. Para editar estilos, modifica `landing.css`. El JS está embebido en el HTML.
 
 ---
 
-## ⚙️ Instalación y uso local
+## 🛠️ Tecnologías
 
-No requiere ningún build system ni dependencias externas. Sigue estos pasos:
-
-```bash
-# 1. Clona el repositorio
-git clone https://github.com/leninalejan/Landinpage-UnivoMap.git
-
-# 2. Entra al directorio
-cd Landinpage-UnivoMap
-
-# 3. Abre el archivo en tu navegador
-open landingpage.html
-# o en Windows:
-start landingpage.html
-```
-
-> Para una mejor experiencia de desarrollo, se recomienda usar la extensión **Live Server** en VS Code.
+- **HTML5** semántico
+- **CSS3** con variables personalizadas (custom properties)
+- **JavaScript** vanilla — sin frameworks ni dependencias externas
+- **Google Fonts** — DM Serif Display + DM Sans
+- **SVG** para el mapa del campus y los íconos
 
 ---
 
-## 📸 Vista previa
+## 📊 Estadísticas del proyecto
 
-```
-┌─────────────────────────────────────────────┐
-│  🗺️  UNIVOmap  |  Características  |  ...  │
-├─────────────────────────────────────────────┤
-│                                             │
-│   Navega el campus          [Mapa SVG]      │
-│   como un experto           Animado con     │
-│                             edificios y     │
-│   [Explorar el campus]      rutas           │
-│   [Cómo funciona]                           │
-│                                             │
-│   40+ edificios · 5 facultades · 200+ aulas │
-└─────────────────────────────────────────────┘
-```
-
----
-
-## ♿ Accesibilidad
-
-El proyecto incluye buenas prácticas de accesibilidad web:
-
-- **Skip link** para saltar al contenido principal
-- Atributos `aria-label`, `aria-expanded` y `aria-controls` en elementos interactivos
-- Roles semánticos en el mapa SVG (`role="img"` con `aria-label`)
-- Contraste de colores adecuado en ambos modos (claro y oscuro)
-- Navegación completamente funcional por teclado
+| Métrica | Valor |
+|---|---|
+| Edificios mapeados | 40+ |
+| Facultades disponibles | 5 |
+| Aulas identificadas | 200+ |
+| Costo para estudiantes | 100% gratuito |
 
 ---
 
 ## 📬 Contacto
 
-¿Tienes preguntas o sugerencias sobre el proyecto?
-
-[![WhatsApp](https://img.shields.io/badge/WhatsApp-Contáctanos-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.link/jqraq3)
-[![GitHub](https://img.shields.io/badge/GitHub-leninalejan-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/leninalejan)
+- 💬 [WhatsApp](https://wa.link/jqraq3)
+- 🐙 [GitHub](https://github.com/leninalejan/Landinpage-UnivoMap)
 
 ---
-
-## 🤝 Contribuciones
-
-Las contribuciones son bienvenidas. Si deseas mejorar el proyecto:
-
-1. Haz un fork del repositorio
-2. Crea una rama con tu feature: `git checkout -b feature/nueva-funcionalidad`
-3. Realiza tus cambios y haz commit: `git commit -m 'feat: agrega nueva funcionalidad'`
-4. Sube la rama: `git push origin feature/nueva-funcionalidad`
-5. Abre un Pull Request
-
----
+##🤵Integrantes 
+Lenin ALejandro Hernández Coreas
+Bremond Antony Hernández Coreas
+Kevin Bladimir Guardado Ortez 
+Mauricio Antonio Bustillo Rosales
+Henry Fernando Portillo Luna 
 
 ## 📄 Licencia
-
-Este proyecto es de código abierto y está disponible bajo la licencia **MIT**.  
-Desarrollado con ❤️ como proyecto estudiantil para la comunidad UNIVO.
-
----
-
 <div align="center">
 
 © 2026 **UNIVOmap** — Universidad de Oriente, San Miguel, El Salvador  
